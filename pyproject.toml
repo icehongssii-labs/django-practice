@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-practice"
+version = "0.1.0"
+description = "책 장고로 배우는 쉽고 빠른 웹개발(2018) 따라하기"
+authors = ["icehongssii12345 <icehongssii@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_practice"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^5.0.6"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
